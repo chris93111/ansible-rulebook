@@ -28,7 +28,7 @@ class StartupArgs:
     controller_username: str = field(default="")
     controller_password: str = field(default="")
     project_data_file: str = field(default="")
-    inventory: str = field(default="")
+    inventory: str = field(default="/opt/inventory")
     check_controller_connection: bool = field(default=False)
     check_vault: bool = field(default=True)
     env_vars: Dict = field(default_factory=dict)
